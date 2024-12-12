@@ -30,7 +30,7 @@ export type LastLoginOptions = {
 
     /**
      * The domain of the login service.
-     * @default "lastlogin.io"
+     * @default "lastlogin.net"
      */
     domain?: string;
 
@@ -102,7 +102,7 @@ export function lastlogin(
     options: LastLoginOptions = {},
 ): Handler {
     const {
-        domain = "lastlogin.io",
+        domain = "lastlogin.net",
         provider = Deno.env.get("LASTLOGIN_PROVIDER"),
     } = options;
 
